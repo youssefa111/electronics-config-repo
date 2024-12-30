@@ -5,3 +5,9 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: validate
+
+  flyway:
+    enabled: true # Enable Flyway (default is true)
+    baseline-on-migrate: true # For non-empty databases, to create a baseline
+    locations: classpath:db/migration # Path for migration scripts
+    clean-disabled: true # Prevent accidental database cleaning
