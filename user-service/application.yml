@@ -3,6 +3,9 @@ spring:
     username: postgres
     url: jdbc:postgresql://localhost/usersDB
     password: postgres
+  flyway:
+    create-schemas: true
+    schemas: usersDB
     
 server:
   port: 8081
