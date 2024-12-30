@@ -3,5 +3,9 @@ spring:
     username: postgres
     url: jdbc:postgresql://localhost/reviewDB
     password: postgres
+  flyway:
+    create-schemas: true
+    schemas: reviewDB
+    
 server:
   port: 8082
